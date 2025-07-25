@@ -20,11 +20,7 @@ export const Formulario = () => {
     }, [id, store.contactos]);
 
 
-    const [nuevoContacto, setNuevoContacto] = useState({
-        nombre: '',
-        telefono: '',
-        email:''
-    });
+    const [nuevoContacto, setNuevoContacto] = useState({});
 
     const [showAlert, setShowAlert] = useState(false);
 
@@ -82,7 +78,7 @@ export const Formulario = () => {
                         className="form-control"
                         placeholder="Nombre Completo"
                         name="name"
-                        value={nuevoContacto.name}
+                        value={nuevoContacto.name || ""}
                         onChange={handleInputChange}
                         required
                     />
@@ -97,7 +93,7 @@ export const Formulario = () => {
                         className="form-control"
                         placeholder="Dirección"
                         name="address"
-                        value={nuevoContacto.address}
+                        value={nuevoContacto.address || ""}
                         onChange={handleInputChange}
                         required
                     />
@@ -113,7 +109,7 @@ export const Formulario = () => {
                         className="form-control"
                         placeholder="Teléfono"
                         name="phone"
-                        value={nuevoContacto.phone}
+                        value={nuevoContacto.phone || ""}
                         onChange={handleInputChange}
                         required
                     />
@@ -129,7 +125,7 @@ export const Formulario = () => {
                         className="form-control"
                         placeholder="Correo electrónico"
                         name="email"
-                        value={nuevoContacto.email}
+                        value={nuevoContacto.email || ""}
                         onChange={handleInputChange}
                         required
                     />

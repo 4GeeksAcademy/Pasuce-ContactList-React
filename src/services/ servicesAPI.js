@@ -16,7 +16,8 @@ export const crearAgenda = async () => {
         method: "POST"
 
     })
-    const data = await response.json()
+    // lo guardo en una variable pero no la estoy usando
+    const data = await response.json()  
 }
 
 export const crearContacto = async (nuevoContacto, dispatch) => {

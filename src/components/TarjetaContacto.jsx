@@ -57,7 +57,7 @@ export const TarjetaContacto = () => {
 
                         <div className="modal fade"
                             id={`modalEliminar-${contacto.id}`}
-                            tabindex="-1" aria-labelledby="exampleModalLabel"
+                            tabIndex="-1" aria-labelledby="exampleModalLabel"
                             aria-hidden="true"
                             style={{ backgroundColor: "rgba(0, 0, 0, 0.5)" }}>
 
